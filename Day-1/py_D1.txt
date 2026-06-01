@@ -13,7 +13,7 @@ Datatypes
 	boolean : bool
 	set : set frozenset
 
-c++ > java > python(slow)
+C++ > java > python(slow)
 
 refecence of a particlur variable
 	print(id(a))  => reference
@@ -28,8 +28,57 @@ type casting
 	bool()
 	
 Mapping
-- map(datatype,input().split("separator");
-ex: a,b = map(int,input("Enter the nums : ").split())
+	- map(datatype,input().split("separator");
+	ex: a,b = map(int,input("Enter the nums : ").split())
+
+Operators
+	Arthmetic 
+		+,-,/,*.,%,/ (floordivision) , ** (power)
+	Relational 
+		< , >, >=, <=, ==, !=
+		Chaining is allowed : 10<20<30
+	Logical
+		and or not 
+	bitwise
+		& | ~ ^ << >>
+
+		a=5,b=7 101 111
+		a&b => 5 101
+		a|b => 7 111
+		~a => 2 010
+		~b => 0 000
+			~20 => -21
+			~-20 => 19
+		a^b => 2 010
+			even no of 1's => 0
+			odd no  of 1's => 1
+			if XOR same number => cancel off
+
+		10<<2
+		 	1010<<2
+			101000 =>40
+				left shift => multiply by 2 (n times)
+				x*(2^y)
+		10>>2
+			1010>>2
+			0010
+				right shift => divide by 2 (n times)
+				x/(2^y)
+	Assignment
+		+=,-=,*=,/=,%=,//=,**=,&=,|=,~= etc
+	Special
+		membership => in,not in
+		identity => is , is not
+
+
+Precedence
+	()
+	**
+	/ * %
+	+ -
+
+while loop if we dont know the number of iterations
+for loop if we already know the no of iterations
 
 
 
