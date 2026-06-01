@@ -1,0 +1,35 @@
+Reserved words
+	java 53
+	C 32
+	python 35
+
+
+Datatypes
+	Numeric : int float complex
+	String : str
+	Sequence : list tuple range
+	binary types : bytes bytearray memoryview
+	mapping: dict
+	boolean : bool
+	set : set frozenset
+
+c++ > java > python(slow)
+
+refecence of a particlur variable
+	print(id(a))  => reference
+	print(type(a)) => moslty class ex a is int <class 'int'>
+	
+
+type casting
+	int()
+	float()	
+	str()
+	complex()
+	bool()
+	
+Mapping
+- map(datatype,input().split("separator");
+ex: a,b = map(int,input("Enter the nums : ").split())
+
+
+
