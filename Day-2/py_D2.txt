@@ -1,0 +1,81 @@
+difference between List and array
+    int a[5]  --> stack memory
+    100 --> 104 -->108
+
+    List
+        print(id(l[0]))
+        print(id(l[1]))
+            random locations.
+            same elements points to the same object.
+            references are kept in sequencial way.
+
+why does array or list index start from 0 , 1 , 2 ...
+    base_address + offset * size_of_datatype.
+    array starts from base index
+    so 
+    100+0*4=100
+
+LISTs 
+    ordered collection of items
+    creation of list    
+
+        l=[1,2,3,4]
+        l=[1,"hello",1.1,True]
+        
+        l=map(int,input().split())
+
+        l=input().split()
+
+        lists have positive and negative indexing
+
+        del L ==> completely remove from the memory
+
+    methods
+        l=[1,2,3,4,5,6]
+        add Elements
+            l.append(7)
+            l.insert(index,value)
+            l.extend([8,9,10]) --> extend only works with iterable items --> like String or list
+                            --> these can be iterated
+            
+        remove Elements
+            l.pop() --> pop(index) --> pop may have index or maynot
+            l.remove(value) --> removes all (value)
+            l.clear() --> emty list
+
+
+        l.sort() --> asc
+        l.sort(reverse=True) --> desc
+        l.reverse()
+
+        l.count(value) -->count of the occurence of the value
+        l.index(value) -->return index of its first occurence
+        
+        l1=l2  --> same reference --> Aliasing
+        l2=l1.copy()  --> different refernece (both are different objects)
+
+
+        for i in l:
+            print(i)
+
+        for i in range(0,len(l)):
+            print(l[i])
+    Slicing
+        l[start:end+1:skip or step]
+
+    built in methods ( nod using dot)
+        sum(L)
+        len()
+        all() --> boolean
+        any() --> boolean
+        max()
+        min()
+
+    concatenation
+        L1+L2 
+    repetition operator
+        L*3 
+    membership operator
+        in
+        not in
+
