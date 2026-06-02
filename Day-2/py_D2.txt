@@ -79,3 +79,15 @@ LISTs
         in
         not in
 
+Time complexity
+    always worst cases are considered
+    for loop --> O(n)
+    no of nested for loops  === O(n^no of times)
+        time complexity is an assumption ,it doesnt depend on the n value
+
+    sorting --> O(nlog(n))
+
+    recursion --> O(2n)/O(2^n)
+
+    binary serach --> O(log(n))
+
