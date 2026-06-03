@@ -1,0 +1,13 @@
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n=int((len(nums)*(len(nums)+1))/2)
+        for i in nums:
+            n-=i
+        return n
+
+
+method 2
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n=int((len(nums)*(len(nums)+1))/2)
+        return n-sum(nums)
