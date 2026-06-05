@@ -1,0 +1,12 @@
+sub array or sub string
+    you cant skip elements
+
+    sliding window
+
+sub sequence
+    you can skip elements in the sequence
+
+    recursion
+
+sub set 
+    any order
