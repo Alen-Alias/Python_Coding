@@ -1,0 +1,58 @@
+Functions
+    Reusability (Elimination of redundant code)
+    Tmodularity
+    maintainabilty 
+    readability
+
+    def add(a,b):
+        return a+b
+    p=10
+    q=20
+    print(add(p,q))
+
+    Types of function arguments
+        -default argument
+        ex: 
+            def add(x,y,z=10): { write default arguments in the function}
+        
+        -Keyword arguments
+        ex:
+            def student(fname,lname):
+                print(fname,lname)
+                print(lname,fname)
+
+            student(fname='Hello",lname="hi")
+            student(lname="hi",fname="hello")
+
+        -positional arguments
+        ex normal ones
+
+        -args and kwargs
+        no of arguments are unknown
+            def myfun(*args,**kwargs):
+            print("non-keyword Arguments (*args):")
+            for arg in args:
+            print(arg)
+
+            print("keywords Arguments (**kwargs):")
+            for key,value in kwargs.items():
+                print(f"{key}=={value}")
+
+    
+Recursion
+    Boomerang
+
+    def f():
+        if n==0:    #base condition
+            return
+        print(n)
+        f(n-1)
+
+    f(10)
+
+    f(0)
+    f(1)
+    f(2)
+    f(3)
+    f(4)
+    f(5)
