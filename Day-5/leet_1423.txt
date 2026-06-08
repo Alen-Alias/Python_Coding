@@ -1,0 +1,10 @@
+class Solution:
+    def maxScore(self, c: List[int], k: int) -> int:
+        m=sum(c[:k])
+        s=m
+        n=len(c)
+        for i in range(k):
+            s=s-c[k-i-1] +c[n-i-1]
+            if s>m:
+                m=s
+        return m

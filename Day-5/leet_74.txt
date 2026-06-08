@@ -1,0 +1,19 @@
+class Solution:
+    def searchMatrix(self, mat: List[List[int]], k: int) -> bool:
+        row=len(mat)
+        col=len(mat[0])
+        l=0
+        h=row*col-1
+        mid=(l+h)//2
+        while(l<=h):
+            mid=(l+h)//2
+            i=mid//col
+            j=mid%col
+            if mat[i][j]==k:
+                return True
+            elif mat[i][j]<k:
+                l=mid+1
+            else:
+                h=mid-1
+        else:
+            return False
