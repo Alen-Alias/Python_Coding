@@ -1,0 +1,21 @@
+
+class Solution:
+    def numIslands(self, m: List[List[str]]) -> int:
+        if not m:
+            return 0
+        def island(m,i,j):
+            if i<0 or j<0 or i>=len(m) or j>=len(m[0]) or m[i][j]!="1":
+                return
+            m[i][j]="-1"
+            island(m,i-1,j)
+            island(m,i+1,j)
+            island(m,i,j-1)
+            island(m,i,j+1)
+
+        c=0
+        for i in range(len(m)):
+            for j in range(len(m[0])):
+                if m[i][j]=="1":
+                    island(m,i,j)
+                    c+=1
+        return c

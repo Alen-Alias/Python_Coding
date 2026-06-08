@@ -56,3 +56,13 @@ Recursion
     f(3)
     f(4)
     f(5)
+
+Backtracking
+    mainly used in 2D matrices
+    matrix indexes:
+        up    -> i-1, j
+        down  -> i+1, j
+        left  -> i, j-1
+        right -> i, j+1
+    
+     

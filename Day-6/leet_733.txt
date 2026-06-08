@@ -1,0 +1,14 @@
+class Solution:
+    def floodFill(self, img: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+        def fd(img,i,j,col,s):
+            if i<0 or j<0 or i>=len(img) or j>=len(img[0]) or s!=img[i][j] or col==img[i][j]:
+                return
+            img[i][j]=col
+            fd(img,i-1,j,col,s)
+            fd(img,i+1,j,col,s)
+            fd(img,i,j-1,col,s)
+            fd(img,i,j+1,col,s)
+
+        fd(img,sr,sc,color,img[sr][sc])
+        print(img)
+        return img

@@ -7,7 +7,7 @@ n=5
 f(n,1)"""
 
 def f(n):
-    if n==0:    #base condition
+    if n==0:
         return
     f(n-1)
     print(n,end=" ")
