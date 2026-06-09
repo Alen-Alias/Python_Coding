@@ -1,0 +1,9 @@
+class Solution:
+    def countStudents(self, s: List[int], w: List[int]) -> int:
+        while s and w and w[0] in s:
+            if s[0]==w[0]:
+                s.pop(0)
+                w.pop(0)
+            else:
+                s.append(s.pop(0))
+        return len(s)

@@ -1,0 +1,13 @@
+percentage
+    x% of y = y% of x
+
+percentage change 
+    difference in value/initial value
+
+EPC { expense price comsumption}
+    10000 Rs
+    1 movie ticket is 100 Rs
+        so 100 tickets
+
+        exprense = price * comsumption
+        10000 = 100 * 100 tickets
