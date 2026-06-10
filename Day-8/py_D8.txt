@@ -1,0 +1,50 @@
+╔════════════════════════════════════════════════════════════════╗
+║                        LINKED LIST                              ║
+╚════════════════════════════════════════════════════════════════╝
+
+📌 ADVANTAGES:
+   • No unwanted memory allocations
+   • Normal lists allocate a fixed size of data when an element is appended
+   • Linked lists save memory by allocating space dynamically
+
+📌 LINKED LIST COMPONENTS (Python):
+   • Data: The value stored in the node
+   • Reference: Pointer to the next node (not traditional pointer like C/C++)
+
+═══════════════════════════════════════════════════════════════════
+
+1️⃣  SINGLY LINKED LIST:
+    
+    [D|next] -> [D|next] -> [D|next] -> NULL
+
+═══════════════════════════════════════════════════════════════════
+
+2️⃣  DOUBLY LINKED LIST:
+    
+    NULL <-> [prev|D|next] <-> [prev|D|next] <-> [prev|D|next] <-> NULL
+
+═══════════════════════════════════════════════════════════════════
+
+3️⃣  CIRCULAR LINKED LIST:
+    
+    [D|next] -> [D|next] -> [D|next]
+       ^                         |
+       |_________________________|
+
+═══════════════════════════════════════════════════════════════════
+
+4️⃣  DOUBLY CIRCULAR LINKED LIST:
+    
+    [prev|D|next] <-> [prev|D|next] <-> [prev|D|next]
+      ^                                       |
+      |_______________________________________|
+
+═══════════════════════════════════════════════════════════════════
+
+real life applications
+    • Browsers (history - back/forward navigation)
+    • Music players ( playlists - next/previous tracks )
+    • Undo/redo functionality in editors
+    • OS process scheduling (ready queues)
+    • Image viewers (next/previous image)
+    
