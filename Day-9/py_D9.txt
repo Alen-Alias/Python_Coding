@@ -1,0 +1,74 @@
+Trees
+    -File directory
+    -hierarchy of datas (Non linear)
+
+Tree Terminology
+    -Node: basic element of tree
+    -Root: topmost node
+    -Parent: node having children
+    -Child: node connected below parent
+    -Siblings: children of same parent
+    -Leaf (External) node: node with no child
+    -Internal node: node with at least one child
+    -Edge: connection between two nodes
+    -Path: sequence of nodes connected by edges
+    -Depth: number of edges from root to node
+    -Height of node: longest path from node to leaf
+    -Height of tree: height of root
+    -Subtree: tree formed by a node and its descendants
+    -Degree of node: number of children of that node
+
+Tree Operations
+    -Create
+    -Insert node
+    -Delete node
+    -Search node
+    -Traverse
+        -DFS: Preorder, Inorder, Postorder
+        -BFS: Level order
+    -Update / modify node value
+
+Types of Trees
+    -General Tree
+    -Binary Tree
+        -Full Binary Tree: every node has 0 or 2 children (no node has only one child).
+        -Complete Binary Tree: all levels are completely filled except possibly the last, which is filled from left to right.
+        -Perfect Binary Tree: all internal nodes have two children and all leaves are at the same level.
+        -Balanced Binary Tree: height of left and right subtrees of every node differ by at most 1 (e.g., AVL tree).
+        -Degenerate (Skewed) Tree: each parent has only one child, behaving like a linked list.
+    -Binary Search Tree (BST)
+    -AVL Tree
+    -Heap (Min Heap / Max Heap)
+    -Trie
+    -B-Tree / B+ Tree
+
+Figures
+    -Basic Tree
+            A
+          / | \
+         B  C  D
+        / \    |
+       E   F   G
+
+    -Binary Tree
+            1
+          /   \
+         2     3
+        / \   / \
+       4  5  6  7
+
+        -Trie (Prefix Tree)
+                -Used to store strings efficiently by shared prefixes.
+                -Each edge represents a character.
+                -Each node represents a prefix.
+                -Word end is marked at terminal nodes.
+
+                Figure (Trie for: to, tea, ten, in, inn)
+                                (root)
+                                /    \
+                             t      i
+                            / \      \
+                         o   e      n*
+                                / \       \
+                             a*  n*      n*
+    
